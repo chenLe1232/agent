@@ -11,7 +11,7 @@ export interface Tool {
 
 export interface ToolCall {
   id: string;
-  type: 'function';
+  type: "function";
   function: {
     name: string;
     arguments: string;
@@ -19,7 +19,7 @@ export interface ToolCall {
 }
 
 export interface ChatMessage {
-  role: 'system' | 'user' | 'assistant' | 'tool';
+  role: "system" | "user" | "assistant" | "tool";
   content: string;
   tool_calls?: ToolCall[];
   tool_call_id?: string;
@@ -27,11 +27,11 @@ export interface ChatMessage {
 
 export interface WeatherParams {
   location: string;
-  unit?: 'celsius' | 'fahrenheit';
+  unit?: "celsius" | "fahrenheit";
 }
 
 export interface CalculatorParams {
-  operation: 'add' | 'subtract' | 'multiply' | 'divide';
+  operation: "add" | "subtract" | "multiply" | "divide";
   a: number;
   b: number;
 }
